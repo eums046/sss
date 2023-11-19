@@ -1,0 +1,32 @@
+@import url();
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: white;
+    text-shadow: 2px 4px 5px black;
+}
+
+

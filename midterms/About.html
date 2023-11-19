@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/6c74e59ceb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">About</a>
+                    <div class="dropdown-content">
+                        <a href="About.html">Introduction</a>
+                        <a href="About.html">Mission, Vision, Goals</a>
+                        <a href="About.html">Contact</a>
+                    </div>
+                </li>
+                <li><a href="Coming out guide.html">Coming out guide</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Legal Advocacy</a>
+                    <div class="dropdown-content">
+                        <a href="Legal Advocacy.html#Know-your-rights">Know Your Rights</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">News</a>
+                    <div class="dropdown-content">
+                        <a href="News.html#news">Latest News</a>
+                    </div>
+                </li>
+                <li><a href="About.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text hidden">
+            <p>About the Creator</p>
+            <h1>Hi, I'm <span>E</span><span class="span2">u</span><span class="span3">m</span><span class="span4">i</span> Biag a <br> 2nd Year BSIT student <br>from FEUTECH</h1>
+        </div>
+    </div>
+    </div>
+    <div id="about" class="hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 about-col-1">
+                    <img src="images/badiing.jpg" class="img-fluid" alt="Profile Image" class="hidden">
+                </div>
+                <div class="col-md-7 about-col-2">
+                   <h1 class="sub-title"> Why I Established Safe Space Society </h1> <br>
+                   <p class="sub-title3"> I made Safe Space Society to create a nurturing online haven where LGBTQIA+ individuals and their allies can find a sense of belonging and empowerment. Our vision is deeply rooted in the belief that every person, regardless of their gender identity or sexual orientation, deserves to be embraced, respected, and celebrated for who they are.
+                   </p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Mission</p>
+                    <p class="tab-links" onclick="opentab('interests')">Vision</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span>Mission</span><br>Our mission at Safe Space Society is to create an inclusive and supportive online community that empowers LGBTQIA+ individuals and their allies by fostering understanding, providing resources, and promoting equal rights and acceptance for all.</li>
+                        
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="interests">
+                    <ul>
+                        <li> <span1>Vision</span1><br>Our vision is to be a global leader in promoting LGBTQIA+ equality and acceptance. We envision a world where every person, regardless of their gender identity or sexual orientation, can live authentically and proudly, free from discrimination, prejudice, and fear.</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <span2>Goals</span2><br> 1. Educate and Inform: To offer comprehensive resources, articles, and information that promote knowledge and understanding of LGBTQIA+ issues, history, and experiences. <br><br>
+                            
+                            2. Advocate for Equality: To actively engage in advocacy efforts, both online and offline, to advance LGBTQIA+ rights and work toward a more equitable society. <br><br>
+                            
+                            3. Celebrate Diversity: To celebrate and embrace the beautiful diversity within the LGBTQIA+ community through events, stories, and discussions that highlight the richness of individual identities and experiences. <br><br>
+                            
+                            4. Promote Love and Acceptance: To cultivate a culture of love, empathy, and acceptance, where every individual is encouraged to love who they love and live without fear of discrimination.</li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>eumibiag@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i>+639561566229</p>
+                <div class="social-icons"> 
+                    <div class="fb">
+                    <a href="https://www.facebook.com/eumii.preeal/"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div class="ig">
+                    <a href="https://www.instagram.com/eumiprl38/"><i class="fa-brands fa-instagram"></i></i></a></div>
+                    <div class="twt">
+                    <a href="https://twitter.com/eumprl38"><i class="fa-brands fa-x-twitter"></i></i></a></div>
+                    <div class="link">
+                    <a href="https://www.linkedin.com/in/eumi-biag-139039257/"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+                <div class="col-md-6 contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="address" name="address" placeholder="Your Address" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"> </textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Made by Yalissa Eumipreal T. Biag | All rights reserved</p>
+    </div>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) { 
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab"); // Corrected "classlist" to "classList"
+        }
+    </script>
+
+</body>
+</html>

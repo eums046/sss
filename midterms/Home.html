@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/6c74e59ceb.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @media (max-width: 300px) {
+    nav2 {
+        position: static; 
+        width: auto; 
+        flex-direction: row;
+        z-index: 1000;
+        
+    }
+
+    nav2 ul {
+        flex-direction: column; 
+        align-items: center; 
+    
+    }
+
+    nav2 li {
+        margin: 10px 0; 
+        text-align: center;
+    }
+}
+
+</style>
+<body>
+    <div id="home"> <div class="slideshow">
+        <img src="images/pride2.avif" alt="Image 1">
+        <img src="images/pride3.avif" alt="Image 2">
+        <img src="images/pride1.avif" alt="Image 3">
+        <div class="texxt">
+            <h1>Welcome to Safe Spaces Society!</h1> <br>
+            <p>Safe Space Society is an inclusive online community dedicated to fostering 
+                a supportive and accepting environment for LGBTQIA+ individuals and allies.<br>
+                 Our mission is to provide a welcoming platform where people of all 
+                 backgrounds can share their stories, seek information, connect with 
+                 others, and celebrate <br> the diverse spectrum of gender identities and 
+                 sexual orientations. Through education, advocacy, and open dialogue, 
+                 we strive to create a safe and affirming <br> space where everyone can be 
+                 their authentic selves without fear of judgment or discrimination. 
+                 Join us as we promote love, understanding, and equality for all.</p>
+                </div>
+        </div>
+            <nav2>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">About</a>
+                        <div class="dropdown-content">
+                            <a href="About.html">Introduction</a>
+                            <a href="About.html">Mission, Vision, Goals</a>
+                            <a href="About.html">Contact</a>
+                        </div>
+                    </li>
+                    <li><a href="Coming out guide.html">Coming out guide</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Legal Advocacy</a>
+                        <div class="dropdown-content">
+                            <a href="Legal Advocacy.html#Know-your-rights">Know Your Rights</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">News</a>
+                        <div class="dropdown-content">
+                            <a href="News.html#news">Latest News</a>
+                        </div>
+                    </li>
+                    <li><a href="About.html#contact">Contact</a></li>
+                </ul>
+            </nav2>
+            </div>
+    <script>
+        const images = document.querySelectorAll('.slideshow img');
+        let currentImageIndex = 0;
+        
+        function changeImage() {
+            images[currentImageIndex].style.opacity = '0';
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].style.opacity = '1';
+        }
+        
+        
+        setInterval(changeImage, 3000);
+        
+        changeImage();
+        
+        
+        setInterval(changeImage, 3000);
+        </script>
+
+
+</body>
+</html>
